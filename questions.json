@@ -4,63 +4,63 @@
         "name": "Two Sum",
         "difficulty": "Easy",
         "description": "Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.",
-        "options": ["Array", "Binary Search", "Dynamic Programming", "DFS", "Greedy Algorithm", "BFS", "Sorting", "Hash Table"],
-        "correct": 7
+        "options": ["Dynamic Programming", "Greedy", "Divide and Conquer", "Array", "Hash Table", "Stack", "Math", "Two Pointers"],
+        "correct": 4
     },
     {
         "number": 2,
         "name": "Add Two Numbers",
         "difficulty": "Medium",
-        "description": "You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order, and each of their nodes contains a single digit. Add the two numbers and return the sum as a linked list.",
-        "options": ["Linked List", "Recursion", "Hash Table", "Binary Search", "Dynamic Programming", "DFS", "Greedy Algorithm", "Sorting"],
-        "correct": 3
+        "description": "You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and return the sum as a linked list.",
+        "options": ["Dynamic Programming", "Recursion", "Hash Table", "Math", "Linked List", "Sorting", "Divide and Conquer", "Two Pointers"],
+        "correct": 4
     },
     {
         "number": 3,
         "name": "Longest Substring Without Repeating Characters",
         "difficulty": "Medium",
         "description": "Given a string s, find the length of the longest substring without repeating characters.",
-        "options": ["Hash Table", "Sliding Window", "Binary Search", "Dynamic Programming", "DFS", "Greedy Algorithm", "BFS", "Sorting"],
-        "correct": 4
+        "options": ["Hash Table", "Math", "Sliding Window", "Greedy", "Binary Search", "Array", "Trie", "Linked List"],
+        "correct": 2
     },
     {
         "number": 4,
         "name": "Median of Two Sorted Arrays",
         "difficulty": "Hard",
         "description": "Given two sorted arrays nums1 and nums2 of size m and n respectively, return the median of the two sorted arrays.",
-        "options": ["Binary Search", "Array", "Dynamic Programming", "DFS", "Greedy Algorithm", "BFS", "Sorting", "Divide and Conquer"],
-        "correct": 5
+        "options": ["Hash Table", "Backtracking", "Two Pointers", "Divide and Conquer", "Dynamic Programming", "Sliding Window", "Math", "Trie"],
+        "correct": 3
     },
     {
         "number": 5,
         "name": "Longest Palindromic Substring",
         "difficulty": "Medium",
         "description": "Given a string s, return the longest palindromic substring in s.",
-        "options": ["Dynamic Programming", "Two Pointers", "Binary Search", "DFS", "Greedy Algorithm", "BFS", "Sorting", "Hash Table"],
-        "correct": 5
+        "options": ["Trie", "Sliding Window", "Greedy", "Math", "Dynamic Programming", "Array", "Linked List", "Sorting"],
+        "correct": 4
     },
     {
         "number": 6,
         "name": "Zigzag Conversion",
         "difficulty": "Medium",
-        "description": "The string 'PAYPALISHIRING' is written in a zigzag pattern on a given number of rows like this: (you may want to display this pattern in a fixed font for better legibility)",
-        "options": ["String", "Array", "Dynamic Programming", "DFS", "Greedy Algorithm", "BFS", "Sorting", "Hash Table"],
-        "correct": 2
+        "description": "Given a string s and an integer numRows, write a method to convert s to a zigzag pattern on a given number of rows.",
+        "options": ["Sorting", "Recursion", "Array", "Sliding Window", "Stack", "String Manipulation", "Linked List", "Dynamic Programming"],
+        "correct": 5
     },
     {
         "number": 7,
         "name": "Reverse Integer",
-        "difficulty": "Easy",
-        "description": "Given a 32-bit signed integer, reverse digits of an integer.",
-        "options": ["Math", "Array", "Dynamic Programming", "DFS", "Greedy Algorithm", "BFS", "Sorting", "Hash Table"],
-        "correct": 0
+        "difficulty": "Medium",
+        "description": "Given a signed 32-bit integer x, return x with its digits reversed. If reversing x causes the value to go outside the signed 32-bit integer range, return 0.",
+        "options": ["Trie", "Recursion", "Dynamic Programming", "Sliding Window", "Stack", "Math", "Divide and Conquer", "Linked List"],
+        "correct": 5
     },
     {
         "number": 8,
         "name": "String to Integer (atoi)",
         "difficulty": "Medium",
         "description": "Implement the myAtoi(string s) function, which converts a string to a 32-bit signed integer.",
-        "options": ["String", "Array", "Dynamic Programming", "DFS", "Greedy Algorithm", "BFS", "Sorting", "Hash Table"],
+        "options": ["Trie", "Stack", "Backtracking", "Greedy", "Math", "Recursion", "Linked List", "Dynamic Programming"],
         "correct": 5
     },
     {
@@ -68,415 +68,87 @@
         "name": "Palindrome Number",
         "difficulty": "Easy",
         "description": "Given an integer x, return true if x is palindrome integer.",
-        "options": ["Math", "Array", "Dynamic Programming", "DFS", "Greedy Algorithm", "BFS", "Sorting", "Hash Table"],
-        "correct": 4
+        "options": ["Math", "Greedy", "Trie", "Backtracking", "Hash Table", "Dynamic Programming", "Linked List", "Sorting"],
+        "correct": 0
     },
     {
         "number": 10,
         "name": "Regular Expression Matching",
         "difficulty": "Hard",
         "description": "Given an input string s and a pattern p, implement regular expression matching with support for '.' and '*'.",
-        "options": ["Dynamic Programming", "String", "Recursion", "DFS", "Greedy Algorithm", "BFS", "Sorting", "Hash Table"],
-        "correct": 4
+        "options": ["Recursion", "Backtracking", "Linked List", "Stack", "Trie", "Array", "Math", "Dynamic Programming"],
+        "correct": 7
     },
     {
         "number": 11,
         "name": "Container With Most Water",
         "difficulty": "Medium",
-        "description": "Given n non-negative integers a1, a2, ..., an, where each represents a point at coordinate (i, ai). n vertical lines are drawn such that the two endpoints of the line i are at (i, ai) and (i, 0). Find two lines that together with the x-axis form a container, such that the container contains the most water.",
-        "options": ["Two Pointers", "Array", "Greedy", "DFS", "Dynamic Programming", "BFS", "Sorting", "Hash Table"],
-        "correct": 5
-    },
-    {
-        "number": 12,
-        "name": "Roman to Integer",
-        "difficulty": "Easy",
-        "description": "Given a roman numeral, convert it to an integer.",
-        "options": ["Hash Table", "Math", "Array", "String", "DFS", "Dynamic Programming", "BFS", "Sorting"],
-        "correct": 0
+        "description": "Given n non-negative integers a1, a2, ..., an, where each represents a point at coordinate (i, ai). n vertical lines are drawn such that the two endpoints of the line i are at (i, ai) and (i, 0). Find two lines, which together with the x-axis forms a container, such that the container contains the most water.",
+        "options": ["Dynamic Programming", "Hash Table", "Two Pointers", "Sliding Window", "Divide and Conquer", "Greedy", "Backtracking", "Array"],
+        "correct": 2
     },
     {
         "number": 13,
-        "name": "Longest Common Prefix",
+        "name": "Roman to Integer",
         "difficulty": "Easy",
-        "description": "Write a function to find the longest common prefix string amongst an array of strings.",
-        "options": ["Trie", "String", "Array", "Hash Table", "DFS", "Dynamic Programming", "BFS", "Sorting"],
-        "correct": 1
+        "description": "Given a roman numeral, convert it to an integer.",
+        "options": ["Hash Table", "Dynamic Programming", "Trie", "Linked List", "Math", "Array", "Divide and Conquer", "Greedy"],
+        "correct": 0
     },
     {
         "number": 14,
-        "name": "3Sum",
-        "difficulty": "Medium",
-        "description": "Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] such that i != j, i != k, and j != k, and nums[i] + nums[j] + nums[k] == 0.",
-        "options": ["Two Pointers", "Array", "Sorting", "DFS", "Dynamic Programming", "BFS", "Hash Table", "Greedy"],
-        "correct": 3
+        "name": "Longest Common Prefix",
+        "difficulty": "Easy",
+        "description": "Write a function to find the longest common prefix string amongst an array of strings.",
+        "options": ["Backtracking", "Stack", "Trie", "Math", "Hash Table", "Linked List", "Sliding Window", "Dynamic Programming"],
+        "correct": 2
     },
     {
         "number": 15,
-        "name": "3Sum Closest",
+        "name": "3Sum",
         "difficulty": "Medium",
-        "description": "Given an integer array nums of length n and an integer target, find three integers in nums such that the sum is closest to target.",
-        "options": ["Two Pointers", "Array", "Sorting", "DFS", "Dynamic Programming", "BFS", "Hash Table", "Greedy"],
-        "correct": 6
+        "description": "Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] such that i != j, i != k, and j != k, and nums[i] + nums[j] + nums[k] == 0.",
+        "options": ["Trie", "Math", "Linked List", "Sorting", "Two Pointers", "Dynamic Programming", "Greedy", "Stack"],
+        "correct": 4
     },
     {
         "number": 16,
-        "name": "Letter Combinations of a Phone Number",
+        "name": "3Sum Closest",
         "difficulty": "Medium",
-        "description": "Given a string containing digits from 2-9 inclusive, return all possible letter combinations that the number could represent.",
-        "options": ["Backtracking", "Hash Table", "String", "Array", "DFS", "Dynamic Programming", "BFS", "Sorting"],
-        "correct": 4
+        "description": "Given an integer array nums of length n and an integer target, find three integers in nums such that the sum is closest to target.",
+        "options": ["Hash Table", "Math", "Two Pointers", "Dynamic Programming", "Recursion", "Array", "Sorting", "Stack"],
+        "correct": 2
     },
     {
         "number": 17,
-        "name": "4Sum",
+        "name": "Letter Combinations of a Phone Number",
         "difficulty": "Medium",
-        "description": "Given an array nums of n integers, return an array of all the unique quadruplets [nums[a], nums[b], nums[c], nums[d]] such that a + b + c + d == target.",
-        "options": ["Two Pointers", "Array", "Sorting", "DFS", "Dynamic Programming", "BFS", "Hash Table", "Greedy"],
-        "correct": 5
+        "description": "Given a string containing digits from 2-9 inclusive, return all possible letter combinations that the number could represent.",
+        "options": ["Two Pointers", "Trie", "Stack", "Math", "Binary Search", "Array", "Linked List", "Backtracking"],
+        "correct": 7
     },
     {
         "number": 18,
-        "name": "Remove Nth Node From End of List",
+        "name": "4Sum",
         "difficulty": "Medium",
-        "description": "Given the head of a linked list, remove the nth node from the end of the list and return its head.",
-        "options": ["Two Pointers", "Linked List", "Array", "Recursion", "DFS", "Dynamic Programming", "BFS", "Sorting"],
-        "correct": 3
+        "description": "Given an array nums of n integers, return all the quadruplets [nums[a], nums[b], nums[c], nums[d]] such that a, b, c, and d are distinct indices and nums[a] + nums[b] + nums[c] + nums[d] == target.",
+        "options": ["Sorting", "Recursion", "Trie", "Divide and Conquer", "Math", "Two Pointers", "Backtracking", "Stack"],
+        "correct": 0
     },
     {
         "number": 19,
-        "name": "Valid Parentheses",
-        "difficulty": "Easy",
-        "description": "Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.",
-        "options": ["Stack", "String", "Array", "DFS", "Dynamic Programming", "BFS", "Sorting", "Hash Table"],
-        "correct": 6
+        "name": "Remove Nth Node From End of List",
+        "difficulty": "Medium",
+        "description": "Given the head of a linked list, remove the nth node from the end of the list and return its head.",
+        "options": ["Sliding Window", "Two Pointers", "Recursion", "Divide and Conquer", "Math", "Sorting", "Dynamic Programming", "Trie"],
+        "correct": 1
     },
     {
         "number": 20,
-        "name": "Merge Two Sorted Lists",
+        "name": "Valid Parentheses",
         "difficulty": "Easy",
-        "description": "Merge two sorted linked lists and return it as a new sorted list. The new list should be made by splicing together the nodes of the first two lists.",
-        "options": ["Linked List", "Recursion", "Hash Table", "Array", "DFS", "Dynamic Programming", "BFS", "Sorting"],
-        "correct": 2
-    },
-{
-        "number": 21,
-        "name": "Generate Parentheses",
-        "difficulty": "Medium",
-        "description": "Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses.",
-        "options": ["Dynamic Programming", "String", "Backtracking", "Array", "DFS", "Recursion", "BFS", "Sorting"],
-        "correct": 2
-    },
-    {
-        "number": 22,
-        "name": "Merge k Sorted Lists",
-        "difficulty": "Hard",
-        "description": "Merge k sorted linked lists and return it as one sorted list. Analyze and describe its complexity.",
-        "options": ["Heap (Priority Queue)", "Divide and Conquer", "Linked List", "Recursion", "Array", "DFS", "Dynamic Programming", "Sorting"],
-        "correct": 5
-    },
-    {
-        "number": 23,
-        "name": "Reverse Nodes in k-Group",
-        "difficulty": "Hard",
-        "description": "Given a linked list, reverse the nodes of a linked list k at a time and return its modified list.",
-        "options": ["Linked List", "Recursion", "Hash Table", "Array", "DFS", "Dynamic Programming", "BFS", "Sorting"],
-        "correct": 2
-    },
-    {
-        "number": 24,
-        "name": "Remove Duplicates from Sorted Array",
-        "difficulty": "Easy",
-        "description": "Given a sorted array nums, remove the duplicates in-place such that each element appears only once and returns the new length.",
-        "options": ["Two Pointers", "Array", "Sorting", "DFS", "Dynamic Programming", "BFS", "Hash Table", "Greedy"],
+        "description": "Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.",
+        "options": ["Math", "Hash Table", "Recursion", "Two Pointers", "Array", "Trie", "Binary Search", "Stack"],
         "correct": 7
-    },
-    {
-        "number": 25,
-        "name": "Remove Element",
-        "difficulty": "Easy",
-        "description": "Given an integer array nums and an integer val, remove all occurrences of val in nums in-place. The relative order of the elements may be changed.",
-        "options": ["Two Pointers", "Array", "Sorting", "DFS", "Dynamic Programming", "BFS", "Hash Table", "Greedy"],
-        "correct": 0
-    },
-    {
-        "number": 26,
-        "name": "Divide Two Integers",
-        "difficulty": "Medium",
-        "description": "Given two integers dividend and divisor, divide two integers without using multiplication, division, and mod operator.",
-        "options": ["Bit Manipulation", "Math", "Array", "String", "DFS", "Dynamic Programming", "BFS", "Sorting"],
-        "correct": 0
-    },
-    {
-        "number": 27,
-        "name": "Next Permutation",
-        "difficulty": "Medium",
-        "description": "Implement next permutation, which rearranges numbers into the lexicographically next greater permutation of numbers.",
-        "options": ["Two Pointers", "Array", "Sorting", "DFS", "Dynamic Programming", "BFS", "Hash Table", "Greedy"],
-        "correct": 1
-    },
-    {
-        "number": 28,
-        "name": "Longest Valid Parentheses",
-        "difficulty": "Hard",
-        "description": "Given a string containing just the characters '(' and ')', find the length of the longest valid (well-formed) parentheses substring.",
-        "options": ["Dynamic Programming", "String", "Stack", "Array", "DFS", "Recursion", "BFS", "Sorting"],
-        "correct": 1
-    },
-    {
-        "number": 29,
-        "name": "Search in Rotated Sorted Array",
-        "difficulty": "Medium",
-        "description": "Suppose an array sorted in ascending order is rotated at some pivot unknown to you beforehand. Search for a target value in the array.",
-        "options": ["Binary Search", "Array", "Sorting", "DFS", "Dynamic Programming", "BFS", "Hash Table", "Greedy"],
-        "correct": 6
-    },
-    {
-        "number": 30,
-        "name": "Find First and Last Position of Element in Sorted Array",
-        "difficulty": "Medium",
-        "description": "Given an array of integers nums sorted in ascending order, find the starting and ending position of a given target value.",
-        "options": ["Binary Search", "Array", "Sorting", "DFS", "Dynamic Programming", "BFS", "Hash Table", "Greedy"],
-        "correct": 0
-    },
-    {
-        "number": 31,
-        "name": "Valid Sudoku",
-        "difficulty": "Medium",
-        "description": "Determine if a 9x9 Sudoku board is valid. Only the filled cells need to be validated according to the rules.",
-        "options": ["Hash Table", "Array", "Matrix", "String", "DFS", "Dynamic Programming", "BFS", "Sorting"],
-        "correct": 0
-    },
-    {
-        "number": 32,
-        "name": "Count and Say",
-        "difficulty": "Easy",
-        "description": "The count-and-say sequence is a sequence of digit strings defined by the recursive formula.",
-        "options": ["String", "Array", "Sorting", "DFS", "Dynamic Programming", "BFS", "Hash Table", "Greedy"],
-        "correct": 6
-    },
-    {
-        "number": 33,
-        "name": "Combination Sum",
-        "difficulty": "Medium",
-        "description": "Given an array of distinct integers candidates and a target integer target, return a list of all unique combinations of candidates where the chosen numbers sum to target.",
-        "options": ["Backtracking", "Array", "Sorting", "DFS", "Dynamic Programming", "BFS", "Hash Table", "Greedy"],
-        "correct": 2
-    },
-    {
-        "number": 34,
-        "name": "Combination Sum II",
-        "difficulty": "Medium",
-        "description": "Given a collection of candidate numbers (candidates) and a target number (target), find all unique combinations in candidates where the candidate numbers sum to target.",
-        "options": ["Backtracking", "Array", "Sorting", "DFS", "Dynamic Programming", "BFS", "Hash Table", "Greedy"],
-        "correct": 7
-    },
-    {
-        "number": 35,
-        "name": "First Missing Positive",
-        "difficulty": "Hard",
-        "description": "Given an unsorted integer array nums, find the smallest missing positive integer.",
-        "options": ["Hash Table", "Array", "Sorting", "DFS", "Dynamic Programming", "BFS", "Greedy", "Bit Manipulation"],
-        "correct": 6
-    },
-    {
-        "number": 36,
-        "name": "Trapping Rain Water",
-        "difficulty": "Hard",
-        "description": "Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it can trap after raining.",
-        "options": ["Two Pointers", "Dynamic Programming", "Stack", "Monotonic Stack", "Array", "Sorting", "Hash Table", "Greedy"],
-        "correct": 2
-    },
-    {
-        "number": 37,
-        "name": "Multiply Strings",
-        "difficulty": "Medium",
-        "description": "Given two non-negative integers num1 and num2 represented as strings, return the product of num1 and num2.",
-        "options": ["Math", "String", "Simulation", "Array", "DFS", "Dynamic Programming", "BFS", "Sorting"],
-        "correct": 5
-    },
-    {
-        "number": 38,
-        "name": "Permutations",
-        "difficulty": "Medium",
-        "description": "Given an array nums of distinct integers, return all the possible permutations.",
-        "options": ["Backtracking", "Array", "Sorting", "DFS", "Dynamic Programming", "BFS", "Hash Table", "Greedy"],
-        "correct": 7
-    },
-    {
-        "number": 39,
-        "name": "Permutations II",
-        "difficulty": "Medium",
-        "description": "Given a collection of numbers, nums, that might contain duplicates, return all possible unique permutations in any order.",
-        "options": ["Backtracking", "Array", "Sorting", "DFS", "Dynamic Programming", "BFS", "Hash Table", "Greedy"],
-        "correct": 6
-    },
-    {
-        "number": 40,
-        "name": "Rotate Image",
-        "difficulty": "Medium",
-        "description": "You are given an n x n 2D matrix representing an image, rotate the image by 90 degrees (clockwise).",
-        "options": ["Array", "Matrix", "String", "DFS", "Dynamic Programming", "BFS", "Hash Table", "Greedy"],
-        "correct": 2
-    },
-{
-        "number": 49,
-        "name": "Group Anagrams",
-        "difficulty": "Medium",
-        "description": "Given an array of strings strs, group the anagrams together. You can return the answer in any order.",
-        "options": ["Array", "Hash Table", "String", "Sorting", "DFS", "Greedy Algorithm", "BFS", "Dynamic Programming"],
-        "correct": 3
-    },
-    {
-        "number": 50,
-        "name": "Pow(x, n)",
-        "difficulty": "Medium",
-        "description": "Implement pow(x, n), which calculates x raised to the power n (i.e., x^n).",
-        "options": ["Math", "Recursion", "Array", "Hash Table", "String", "Sorting", "DFS", "Greedy Algorithm"],
-        "correct": 1
-    },
-    {
-        "number": 51,
-        "name": "N-Queens",
-        "difficulty": "Hard",
-        "description": "The n-queens puzzle is the problem of placing n queens on an n x n chessboard such that no two queens attack each other.",
-        "options": ["Array", "Backtracking", "Hash Table", "String", "Sorting", "DFS", "Greedy Algorithm", "BFS"],
-        "correct": 5
-    },
-    {
-        "number": 52,
-        "name": "Maximum Subarray",
-        "difficulty": "Medium",
-        "description": "Given an integer array nums, find the contiguous subarray (containing at least one number) which has the largest sum and return its sum.",
-        "options": ["Array", "Divide and Conquer", "Dynamic Programming", "Hash Table", "String", "Sorting", "DFS", "Greedy Algorithm"],
-        "correct": 0
-    },
-    {
-        "number": 53,
-        "name": "Spiral Matrix",
-        "difficulty": "Medium",
-        "description": "Given an m x n matrix, return all elements of the matrix in spiral order.",
-        "options": ["Array", "Matrix", "Simulation", "Hash Table", "String", "Sorting", "DFS", "Greedy Algorithm"],
-        "correct": 5
-    },
-    {
-        "number": 54,
-        "name": "Jump Game",
-        "difficulty": "Medium",
-        "description": "Given an array of non-negative integers nums, you are initially positioned at the first index of the array. Each element in the array represents your maximum jump length at that position. Determine if you are able to reach the last index.",
-        "options": ["Array", "Dynamic Programming", "Greedy", "Hash Table", "String", "Sorting", "DFS", "BFS"],
-        "correct": 6
-    },
-    {
-        "number": 55,
-        "name": "Merge Intervals",
-        "difficulty": "Medium",
-        "description": "Given an array of intervals where intervals[i] = [starti, endi], merge all overlapping intervals, and return an array of the non-overlapping intervals that cover all the intervals in the input.",
-        "options": ["Array", "Sorting", "Hash Table", "String", "DFS", "Dynamic Programming", "Greedy", "BFS"],
-        "correct": 2
-    },
-    {
-        "number": 56,
-        "name": "Insert Interval",
-        "difficulty": "Medium",
-        "description": "Given a set of non-overlapping intervals, insert a new interval into the intervals (merge if necessary).",
-        "options": ["Array", "Sorting", "Hash Table", "String", "DFS", "Dynamic Programming", "Greedy", "BFS"],
-        "correct": 7
-    },
-    {
-        "number": 57,
-        "name": "Length of Last Word",
-        "difficulty": "Easy",
-        "description": "Given a string s consisting of words and spaces, return the length of the last word in the string.",
-        "options": ["String", "Array", "Hash Table", "Sorting", "DFS", "Dynamic Programming", "Greedy", "BFS"],
-        "correct": 1
-    },
-    {
-        "number": 58,
-        "name": "Unique Paths",
-        "difficulty": "Medium",
-        "description": "A robot is located at the top-left corner of a m x n grid (marked 'Start' in the diagram below). The robot can only move either down or right at any point in time. The robot is trying to reach the bottom-right corner of the grid (marked 'Finish' in the diagram below).",
-        "options": ["Math", "Dynamic Programming", "Combinatorics", "Array", "Hash Table", "String", "Sorting", "DFS"],
-        "correct": 4
-    },
-{
-        "number": 59,
-        "name": "Unique Paths II",
-        "difficulty": "Medium",
-        "description": "A robot is located at the top-left corner of a m x n grid (marked 'Start' in the diagram below). The robot can only move either down or right at any point in time. The robot is trying to reach the bottom-right corner of the grid (marked 'Finish' in the diagram below).",
-        "options": ["Array", "Dynamic Programming", "Matrix", "Hash Table", "String", "Sorting", "DFS", "BFS"],
-        "correct": 0
-    },
-    {
-        "number": 60,
-        "name": "Minimum Path Sum",
-        "difficulty": "Medium",
-        "description": "Given a m x n grid filled with non-negative numbers, find a path from top left to bottom right, which minimizes the sum of all numbers along its path.",
-        "options": ["Array", "Dynamic Programming", "Matrix", "Hash Table", "String", "Sorting", "DFS", "BFS"],
-        "correct": 2
-    },
-    {
-        "number": 61,
-        "name": "Valid Number",
-        "difficulty": "Hard",
-        "description": "A valid number can be split up into these components (in order): A decimal number or an integer, followed by an optional exponent.",
-        "options": ["String", "Array", "Hash Table", "Sorting", "DFS", "Dynamic Programming", "Greedy", "BFS"],
-        "correct": 0
-    },
-    {
-        "number": 62,
-        "name": "Plus One",
-        "difficulty": "Easy",
-        "description": "Given a non-empty array of decimal digits representing a non-negative integer, increment one to the integer.",
-        "options": ["Array", "Math", "Hash Table", "String", "DFS", "Dynamic Programming", "Greedy", "BFS"],
-        "correct": 2
-    },
-    {
-        "number": 63,
-        "name": "Text Justification",
-        "difficulty": "Hard",
-        "description": "Given an array of words and a width maxWidth, format the text such that each line has exactly maxWidth characters and is fully (left and right) justified.",
-        "options": ["Array", "String", "Simulation", "Hash Table", "DFS", "Dynamic Programming", "Greedy", "BFS"],
-        "correct": 5
-    },
-    {
-        "number": 64,
-        "name": "Sqrt(x)",
-        "difficulty": "Easy",
-        "description": "Given a non-negative integer x, compute and return the square root of x.",
-        "options": ["Math", "Binary Search", "Array", "String", "DFS", "Dynamic Programming", "Greedy", "BFS"],
-        "correct": 1
-    },
-    {
-        "number": 65,
-        "name": "Climbing Stairs",
-        "difficulty": "Easy",
-        "description": "You are climbing a staircase. It takes n steps to reach the top. Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?",
-        "options": ["Math", "Dynamic Programming", "Memoization", "Array", "Hash Table", "String", "Sorting", "DFS"],
-        "correct": 6
-    },
-    {
-        "number": 66,
-        "name": "Simplify Path",
-        "difficulty": "Medium",
-        "description": "Given a string path, which is an absolute path (starting with a slash '/') to a file or directory in a Unix-style file system, convert it to the simplified canonical path.",
-        "options": ["String", "Stack", "Array", "Hash Table", "DFS", "Dynamic Programming", "Greedy", "BFS"],
-        "correct": 1
-    },
-    {
-        "number": 67,
-        "name": "Edit Distance",
-        "difficulty": "Hard",
-        "description": "Given two strings word1 and word2, return the minimum number of operations required to convert word1 to word2.",
-        "options": ["String", "Dynamic Programming", "Array", "Hash Table", "DFS", "Sorting", "BFS", "Greedy"],
-        "correct": 4
-    },
-    {
-        "number": 68,
-        "name": "Set Matrix Zeroes",
-        "difficulty": "Medium",
-        "description": "Given an m x n integer matrix matrix, if an element is 0, set its entire row and column to 0.",
-        "options": ["Array", "Hash Table", "Matrix", "String", "DFS", "Dynamic Programming", "Greedy", "BFS"],
-        "correct": 2
     }
 ]
