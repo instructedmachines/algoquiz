@@ -84,7 +84,7 @@
         "name": "Container With Most Water",
         "difficulty": "Medium",
         "description": "Given n non-negative integers a1, a2, ..., an, where each represents a point at coordinate (i, ai). n vertical lines are drawn such that the two endpoints of the line i are at (i, ai) and (i, 0). Find two lines, which together with the x-axis forms a container, such that the container contains the most water.",
-        "options": ["Dynamic Programming", "Hash Table", "Two Pointers", "Sliding Window", "Divide and Conquer", "Greedy", "Backtracking", "Array"],
+        "options": ["Dynamic Programming", "Hash Table", "Two Pointers", "Sliding Window", "Divide and Conquer", "Recursion", "Backtracking", "Linked List"],
         "correct": 2
     },
     {
@@ -92,7 +92,7 @@
         "name": "Roman to Integer",
         "difficulty": "Easy",
         "description": "Given a roman numeral, convert it to an integer.",
-        "options": ["Hash Table", "Dynamic Programming", "Trie", "Linked List", "Math", "Array", "Divide and Conquer", "Greedy"],
+        "options": ["Hash Table", "Dynamic Programming", "Trie", "Linked List", "Recursion", "Array", "Divide and Conquer", "Greedy"],
         "correct": 0
     },
     {
@@ -108,7 +108,7 @@
         "name": "3Sum",
         "difficulty": "Medium",
         "description": "Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] such that i != j, i != k, and j != k, and nums[i] + nums[j] + nums[k] == 0.",
-        "options": ["Trie", "Math", "Linked List", "Sorting", "Two Pointers", "Dynamic Programming", "Greedy", "Stack"],
+        "options": ["Trie", "Math", "Linked List", "Brute Force", "Two Pointers", "Dynamic Programming", "Greedy", "Stack"],
         "correct": 4
     },
     {
@@ -116,7 +116,7 @@
         "name": "3Sum Closest",
         "difficulty": "Medium",
         "description": "Given an integer array nums of length n and an integer target, find three integers in nums such that the sum is closest to target.",
-        "options": ["Hash Table", "Math", "Two Pointers", "Dynamic Programming", "Recursion", "Array", "Sorting", "Stack"],
+        "options": ["Hash Table", "Math", "Two Pointers", "Dynamic Programming", "Recursion", "Backtracking", "Priority Queue", "Stack"],
         "correct": 2
     },
     {
@@ -132,7 +132,7 @@
         "name": "4Sum",
         "difficulty": "Medium",
         "description": "Given an array nums of n integers, return all the quadruplets [nums[a], nums[b], nums[c], nums[d]] such that a, b, c, and d are distinct indices and nums[a] + nums[b] + nums[c] + nums[d] == target.",
-        "options": ["Sorting", "Recursion", "Trie", "Divide and Conquer", "Math", "Two Pointers", "Backtracking", "Stack"],
+        "options": ["Sorting", "Recursion", "Trie", "Divide and Conquer", "Math", "Brute Force", "Backtracking", "Stack"],
         "correct": 0
     },
     {
