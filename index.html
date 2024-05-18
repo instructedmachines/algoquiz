@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeetCode Algorithm Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .quiz-container {
+            max-width: 600px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .question-title {
+            font-weight: bold;
+            color: #333;
+        }
+        .question-details {
+            margin-bottom: 10px;
+            color: #666;
+        }
+        .options {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+        .options label {
+            background: #eaeaea;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .options input[type="radio"] {
+            display: none;
+        }
+        .options label:hover {
+            background: #d0d0d0;
+        }
+        .correct {
+            background-color: #c8e6c9 !important;
+        }
+        .incorrect {
+            background-color: #ffcdd2 !important;
+        }
+        .next-button {
+            display: none;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .next-button button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .next-button button:hover {
+            background-color: #555;
+        }
+        #results {
+            text-align: center;
+            margin-top: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>LeetCode Algorithm Quiz</h1>
+    <div class="quiz-container">
+        <div id="quiz">
+            <!-- Questions will be inserted here by JavaScript -->
+        </div>
+        <div class="next-button" id="nextButton">
+            <button onclick="nextQuestion()">Next</button>
+        </div>
+        <div id="results"></div>
+    </div>
+    <script>
+        let quizData = [];
+        let currentQuestionIndex = 0;
+        let score = 0;
+
+        const quizContainer = document.getElementById('quiz');
+        const nextButton = document.getElementById('nextButton');
+
+        async function loadQuestions() {
+            try {
+                const response = await fetch('questions.json');
+                if (!response.ok) {
+                    throw new Error(`HTTP error! Status: ${response.status}`);
+                }
+                quizData = await response.json();
+                loadQuestion(currentQuestionIndex);
+            } catch (error) {
+                console.error('Error loading questions:', error);
+                document.getElementById('results').innerText = 'Failed to load quiz questions. Please try again later.';
+            }
+        }
+
+        function loadQuestion(index) {
+            quizContainer.innerHTML = '';
+            const item = quizData[index];
+
+            const questionDiv = document.createElement('div');
+            questionDiv.classList.add('question');
+
+            const questionTitle = document.createElement('div');
+            questionTitle.classList.add('question-title');
+            questionTitle.innerText = `${item.number}. ${item.name} (${item.difficulty})`;
+            questionDiv.appendChild(questionTitle);
+
+            const questionDetails = document.createElement('div');
+            questionDetails.classList.add('question-details');
+            questionDetails.innerText = item.description;
+            questionDiv.appendChild(questionDetails);
+
+            const optionsDiv = document.createElement('div');
+            optionsDiv.classList.add('options');
+
+            item.options.forEach((option, optIndex) => {
+                const label = document.createElement('label');
+                const input = document.createElement('input');
+                input.type = 'radio';
+                input.name = `question${index}`;
+                input.value = optIndex;
+                input.onclick = () => checkAnswer(optIndex, item.correct, label);
+
+                label.appendChild(input);
+                label.appendChild(document.createTextNode(option));
+                optionsDiv.appendChild(label);
+            });
+
+            questionDiv.appendChild(optionsDiv);
+            quizContainer.appendChild(questionDiv);
+        }
+
+        function checkAnswer(selected, correct, label) {
+            const resultMessage = selected === correct ? 'Correct!' : `Wrong! The correct answer is ${quizData[currentQuestionIndex].options[correct]}.`;
+            document.getElementById('results').innerText = resultMessage;
+            nextButton.style.display = 'block';
+
+            if (selected === correct) {
+                label.classList.add('correct');
+                score++;
+            } else {
+                label.classList.add('incorrect');
+                document.querySelectorAll(`input[name="question${currentQuestionIndex}"]`)[correct].parentElement.classList.add('correct');
+            }
+
+            // Disable all inputs to prevent further changes
+            document.querySelectorAll(`input[name="question${currentQuestionIndex}"]`).forEach(input => input.disabled = true);
+        }
+
+        function nextQuestion() {
+            currentQuestionIndex++;
+            if (currentQuestionIndex < quizData.length) {
+                loadQuestion(currentQuestionIndex);
+                document.getElementById('results').innerText = '';
+                nextButton.style.display = 'none';
+            } else {
+                showFinalScore();
+            }
+        }
+
+        function showFinalScore() {
+            quizContainer.innerHTML = '';
+            document.getElementById('results').innerText = `You scored ${score} out of ${quizData.length}`;
+            nextButton.style.display = 'none';
+        }
+
+        loadQuestions();
+    </script>
+</body>
+</html>
+

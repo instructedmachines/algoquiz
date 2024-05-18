@@ -1,0 +1,67 @@
+[
+    {
+        "number": 1,
+        "name": "Two Sum",
+        "difficulty": "Easy",
+        "description": "Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.",
+        "options": ["Binary Search", "Hash Table", "Sorting", "Brute Force", "Dynamic Programming", "BFS", "DFS", "Greedy Algorithm"],
+        "correct": 1
+    },
+    {
+        "number": 2,
+        "name": "Add Two Numbers",
+        "difficulty": "Medium",
+        "description": "You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order, and each of their nodes contains a single digit. Add the two numbers and return the sum as a linked list.",
+        "options": ["Linked List", "Hash Table", "Sorting", "Brute Force", "Dynamic Programming", "BFS", "DFS", "Greedy Algorithm"],
+        "correct": 0
+    },
+    {
+        "number": 3,
+        "name": "Longest Substring Without Repeating Characters",
+        "difficulty": "Medium",
+        "description": "Given a string s, find the length of the longest substring without repeating characters.",
+        "options": ["Binary Search", "Sliding Window", "Sorting", "Brute Force", "Dynamic Programming", "BFS", "DFS", "Greedy Algorithm"],
+        "correct": 1
+    },
+    {
+        "number": 5,
+        "name": "Longest Palindromic Substring",
+        "difficulty": "Medium",
+        "description": "Given a string s, return the longest palindromic substring in s.",
+        "options": ["Binary Search", "Hash Table", "Sorting", "Brute Force", "Dynamic Programming", "BFS", "DFS", "Greedy Algorithm"],
+        "correct": 4
+    },
+    {
+        "number": 10,
+        "name": "Regular Expression Matching",
+        "difficulty": "Hard",
+        "description": "Given an input string s and a pattern p, implement regular expression matching with support for '.' and '*'.",
+        "options": ["Binary Search", "Hash Table", "Sorting", "Brute Force", "Dynamic Programming", "BFS", "DFS", "Greedy Algorithm"],
+        "correct": 4
+    },
+    {
+        "number": 11,
+        "name": "Container With Most Water",
+        "difficulty": "Medium",
+        "description": "Given n non-negative integers a1, a2, ..., an, where each represents a point at coordinate (i, ai). n vertical lines are drawn such that the two endpoints of the line i are at (i, ai) and (i, 0). Find two lines that together with the x-axis form a container, such that the container contains the most water.",
+        "options": ["Binary Search", "Hash Table", "Two Pointers", "Brute Force", "Dynamic Programming", "BFS", "DFS", "Greedy Algorithm"],
+        "correct": 2
+    },
+    {
+        "number": 17,
+        "name": "Letter Combinations of a Phone Number",
+        "difficulty": "Medium",
+        "description": "Given a string containing digits from 2-9 inclusive, return all possible letter combinations that the number could represent. Return the answer in any order.",
+        "options": ["Binary Search", "Hash Table", "Sorting", "Brute Force", "Dynamic Programming", "BFS", "DFS", "Backtracking"],
+        "correct": 7
+    },
+    {
+        "number": 23,
+        "name": "Merge k Sorted Lists",
+        "difficulty": "Hard",
+        "description": "You are given an array of k linked-lists lists, each linked-list is sorted in ascending order. Merge all the linked-lists into one sorted linked-list and return it.",
+        "options": ["Binary Search", "Hash Table", "Sorting", "Priority Queue (Heap)", "Dynamic Programming", "BFS", "DFS", "Greedy Algorithm"],
+        "correct": 3
+    }
+]
+
